@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className="container mx-auto">
-        <nav className="bg-gradient-to-r from-[#3d0714] to-[#742006] h-40 p-8 ">
+        <nav className="bg-gradient-to-r from-rose-900 to-rose-900 h-40 p-8 ">
           <div className="flex flex-col items-center md:flex-row md:justify-between">
             <Link href="/">
               <h1 className="text-2xl md:text-3xl font-black text-white">

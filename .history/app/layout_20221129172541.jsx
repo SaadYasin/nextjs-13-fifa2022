@@ -12,7 +12,14 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body className="container mx-auto">
-        <nav className="bg-gradient-to-r from-[#3d0714] to-[#742006] h-40 p-8 ">
+        <nav className="bg-rose-900 h-40 p-8 relative">
+          <Image
+            src="/public/logo.png"
+            alt='world cup logo'
+            width={80}
+            height={80}
+            className=
+          />
           <div className="flex flex-col items-center md:flex-row md:justify-between">
             <Link href="/">
               <h1 className="text-2xl md:text-3xl font-black text-white">
@@ -23,9 +30,7 @@ export default function RootLayout({ children }) {
               Qatar 2022
             </h4>
           </div>
-          <p className="text-sm text-white mt-8 text-center ">
-            {DateTime.now().toLocaleString(DateTime.DATETIME_MED)}
-          </p>
+            <p className='text-sm text-white mt-8 text-center '>{DateTime.now().toLocaleString(DateTime.DATETIME_MED) }</p>
         </nav>
         {children}
       </body>

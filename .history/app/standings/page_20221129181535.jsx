@@ -14,7 +14,7 @@ const StandingPage = async () => {
   const standings = (await response.json()).data;
 
   return (
-    <div className='bg-[#9fac98] grid grid-cols-1 md:grid-cols-2 gap-1 pb-4'>
+    <div className='bg-[emerald-50] grid grid-cols-1 md:grid-cols-2 gap-1 pb-4'>
       {standings.map(standing => <StandingSection standing={standing} key={standing._id} />)}
       {/* <pre>{JSON.stringify(standings, null, 2)}</pre> */}
     </div>
