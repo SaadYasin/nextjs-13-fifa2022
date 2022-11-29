@@ -31,7 +31,6 @@ yarn-error.log*
 
 # http files
 rest.http
-
 # vercel
 .vercel
 

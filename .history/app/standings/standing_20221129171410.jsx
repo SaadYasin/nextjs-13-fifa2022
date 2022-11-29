@@ -19,9 +19,8 @@ const StandingSection = ({ standing }) => {
       <div className='w-full h-px bg-rose-600 mt-2'></div>
       
       {/* {teams.map(team => <TeamRow team={team} key={team.name_en} />)} */}
-      {orderBy(teams, 'pts', 'desc').map(team => (
-        <TeamRow team={team} key={team.name_en} />
-      ))}
+      {teams.map(team => (
+        <TeamRow team={team} key={team.name_en} />))}
     </div>
   )
 }
