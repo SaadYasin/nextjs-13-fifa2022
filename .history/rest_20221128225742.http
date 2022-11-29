@@ -1,0 +1,9 @@
+POST 'http://api.cup2022.ir/api/user'
+Content-Type: application/json
+
+{
+  "name" : "saad",
+  "email" : "admin@archwiz.net",
+  "password" : "LaLa-RooT",
+  "passwordconfirm" : "LaLa-RooT"
+}
