@@ -10,7 +10,7 @@ export default function Home() {
 
       <Link href="/matches">
         <button className='bg-rose-700 hover:bg-red-900 px-3 py-2 rounded-md text-white font-bold uppercase'>
-          Matches List
+          Games schedule
         </button>
       </Link>
     </div>

@@ -1,0 +1,6 @@
+curl --location --request POST 'http://api.cup2022.ir/api/v1/user/login' 
+--header 'Content-Type: application/json' \
+--data-raw '{
+"email": "admin@",
+"password": "LaLa-BooT"
+}'
