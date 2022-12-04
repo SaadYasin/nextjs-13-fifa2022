@@ -4,8 +4,9 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["upload.wikimedia.org", "api.cup2022.ir"],
+    domains: ['upload.wikimedia.org'],
+    [http://api.cup2022.ir]
   },
-};
+}
 
 module.exports = nextConfig
