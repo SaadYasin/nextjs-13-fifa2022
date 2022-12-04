@@ -16,10 +16,10 @@ const MatchesPage = async() => {
 
   return (
     <div className="flex flex-col items-center bg-[#9fac98] py-4">
-      {/* <h1 className="text-lg font-bold text-[#3d0714]">
-        Round of Groups | Matches Schedule
-      </h1> */}
-      {matches && matches.map((match) => (
+      <h1 className="text-2xl font-bold text-[#3d0714]">
+        Round of Grou Matches Schedule
+      </h1>
+      {matches.map((match) => (
         <MatchSection match={match} key={match._id} />
       ))}
 

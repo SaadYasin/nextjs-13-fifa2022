@@ -19,7 +19,7 @@ const MatchesPage = async() => {
       {/* <h1 className="text-lg font-bold text-[#3d0714]">
         Round of Groups | Matches Schedule
       </h1> */}
-      {matches && matches.map((match) => (
+      {matchesmatches.map((match) => (
         <MatchSection match={match} key={match._id} />
       ))}
 

@@ -16,14 +16,16 @@ const MatchesPage = async() => {
 
   return (
     <div className="flex flex-col items-center bg-[#9fac98] py-4">
-      {/* <h1 className="text-lg font-bold text-[#3d0714]">
+      <h1 className="text-xl font-bold text-[#3d0714]">
         Round of Groups | Matches Schedule
-      </h1> */}
-      {matches && matches.map((match) => (
-        <MatchSection match={match} key={match._id} />
+      </h1>
+      {matches.map((match) => (
+        matches.home_team_en === "" ?
+          (<MatchSection match={match} key={match._id})
+        : ("")  />
       ))}
 
-      <pre>{JSON.stringify(matches, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(matches, null, 2)}</pre> */}
     </div>
   );
 }
